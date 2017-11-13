@@ -1,0 +1,12 @@
+#ifndef DBCOMTOOLS_GLOBAL_H
+#define DBCOMTOOLS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DBCOMTOOLS_LIBRARY)
+#  define DBCOMTOOLSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DBCOMTOOLSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DBCOMTOOLS_GLOBAL_H
